@@ -4,16 +4,20 @@ import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLock } from "react-icons/ai";
 import { InputField } from "../common/InputField";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 const RegisterForm = () => {
+  const [checked, setChecked] = useState(false)
   const [visible, setVisible] = useState(false);
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
     name: "",
     lastName: "",
+    toDirection: ""
   });
-
+console.log(checked);
   const handleInput = (value, name) => {
     setInputs((prev) => {
       return {
@@ -22,6 +26,17 @@ const RegisterForm = () => {
       };
     });
   };
+
+  const submitReq = () => {
+    if (!inputs.email || !inputs.password || !inputs.name || !inputs.lastName || !checked) return;
+    else {
+      fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(response => response.json())
+        
+        inputs.toDirection = "/todo";
+
+    };
+  }
 
   return (
     <>
@@ -78,13 +93,13 @@ const RegisterForm = () => {
         </div>
       </div>
       <div className="form-group">
-        <input type="checkbox" required/>
+        <input type="checkbox" checked={checked} onChange={() => setChecked((prev) => !prev)} />
         <label className="agreement">
           Agree With <span>Privacy Policy</span>
         </label>
       </div>
-      <div className="create-btn">
-        <button>Create Account</button>
+      <div className="create-btn" onClick={submitReq}>
+        <Link to={inputs.toDirection}>Create Account</Link>
       </div>
     </>
   );

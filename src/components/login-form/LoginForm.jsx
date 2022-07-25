@@ -17,31 +17,21 @@ const LoginForm = () => {
       !inputs.password ||
       !inputs.email.match(REGEX_EMAIL) ||
       !inputs.password.match(REGEX_PASSWORD)
-    )
-      console.log("1111");
+    ) return
     else {
-      fetch("https://api.com")
-        .then((res) => res.json())
-        .then(
-          (result) => {
-            this.setState({
-              isLoaded: true,
-              items: result.items,
-            });
-          },
-          (error) => {
-            this.setState({
-              isLoaded: true,
-              error,
-            });
-          }
-        );
+      fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(response => response.json())
+
+      inputs.toDirection= "/todo";
+
+
     }
   };
 
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
+    toDirection: ""
   });
 
   const handleInput = (value, name) => {
@@ -83,8 +73,8 @@ const LoginForm = () => {
         </div>
       </div>
       <div id="form-group">
-        <div className="create-btn">
-          <Link to="/todo" onClick={onSubmitLogin}>Create Account</Link>
+        <div className="create-btn" onClick={onSubmitLogin}>
+          <Link to={inputs.toDirection} >Sign in</Link>
         </div>
       </div>
     </form>

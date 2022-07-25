@@ -55,7 +55,7 @@ input:focus {
   margin: 0 0 20px;
 }
 
-.create-btn > a {
+.create-btn > a, .create-btn > button  {
   padding: 6px 28px;
   background-color: #24695c;
   color: #fff;
