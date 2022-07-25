@@ -1,0 +1,60 @@
+p {
+  font-weight: 600;
+}
+
+#body-wrapper {
+  margin-left: 290px;
+  padding-top: 30px;
+  color: hsla(0, 0%, 100%, 0.7);
+  padding: 30px 15px 0;
+  min-height: calc(100vh - 82px);
+}
+
+.todo-header-wrap {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.todo-heading,
+.path,
+.todo-body {
+  padding: 0 12px;
+}
+
+.todo-heading > h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card {
+  background-color: #111727;
+  padding: 0px 30px 30px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.card-name > p {
+  font-size: 18px;
+}
+
+.finished-checkbox {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #d22d3d;
+}
+
+.finished-checkbox > input {
+  accent-color: #d22d3d;
+  margin-left: 5px;
+}
+
+

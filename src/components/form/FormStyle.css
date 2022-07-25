@@ -1,0 +1,47 @@
+#some-todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(36, 105, 92, 0.2);
+  padding: 10px 0;
+}
+
+.task-name > h4 {
+  margin: 0px 0px 8px;
+  font-size: 17px;
+}
+
+.delete-approve {
+  width: 16px;
+  height: 26px;
+  color: #24695c;
+}
+
+.task-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  padding: 1px 5px;
+}
+
+.approve {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px;
+}
+
+.delete:hover,
+.approve:hover {
+  text-align: center;
+  border-radius: 4px;
+  background: #111727;
+  border: 1px solid rgba(36, 105, 92, 0.2);
+}

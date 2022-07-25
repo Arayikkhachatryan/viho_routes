@@ -1,0 +1,131 @@
+#header {
+  width: 100%;
+  height: 82px;
+  border: 1px solid #152731;
+}
+
+#header-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 82px;
+  background-color: #111727;
+  box-shadow: 3px 0px 18px 0px rgb(42, 50, 61);
+  z-index: 15;
+  top: 0;
+  left: 0;
+}
+
+#logo-sidebar {
+  width: 290px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  border-right: 1px solid #152731;
+  justify-content: space-around;
+  padding: 24px 40px;
+}
+
+#sidebar {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 8px;
+  transition: all 0.3s ease;
+}
+
+#sidebar:hover {
+  background-color: rgba(36, 105, 92, 0.1);
+}
+
+.sidebar-icon {
+  color: #26695c;
+  font-size: 20px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#search-bar {
+  display: flex;
+  align-items: center;
+    flex: auto;
+  height: 100%;
+  padding: 24px 40px;
+  justify-content: start;
+}
+
+.search-icon {
+  color: #ffff;
+  font-weight: 400;
+}
+
+.search-input {
+  font-family: sans-serif;
+  background-color: initial;
+  font-size: 14px;
+  border: none;
+  font-weight: 600;
+  padding: 0 20px;
+  color: #b8babf;
+}
+
+.search-input:focus {
+  font-family: sans-serif;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b8babf;
+}
+
+.header-btn,
+.login-btn {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 8px;
+  transition: all 0.3s ease;
+  color: #ffff;
+}
+
+.header-btn {
+  margin-right: 10px;
+}
+
+.header-btn:hover {
+  background-color: rgba(36, 105, 92, 0.1);
+}
+
+.login-btn {
+  font-weight: 600;
+  padding: 6px 20px;
+  background-color: rgba(36, 105, 92, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 14px;
+  width: 120px;
+}
+
+.login-btn > a {
+  color: #26695c;
+  text-decoration: none;
+}
+
+.login-btn:hover > a {
+  color: #ffff;
+}
+
+.login-btn:hover {
+  background-color: #26695c;
+  color: #ffff;
+}
+
+#btns-login {
+  display: flex;
+  padding: 24px 40px;
+}

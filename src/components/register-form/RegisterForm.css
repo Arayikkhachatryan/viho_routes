@@ -1,0 +1,117 @@
+input:focus {
+  outline: none;
+}
+
+#form-group {
+  width: 390px;
+  margin-bottom: 20px;
+}
+
+.group-heading {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.name,
+.surname {
+  display: flex;
+  align-items: center;
+  width: 190px;
+}
+
+.surname {
+  padding-left: 10px;
+}
+
+.name > input,
+.surname > input,
+.email > input,
+.password > input {
+  border: 1px solid #e9f0ee;
+  border-radius: 0.25rem;
+  font-size: 14px;
+  color: #898989;
+  padding: 6px 12px;
+  flex: 1 1 auto;
+  width: 1%;
+  margin: 0px 0 0 -6px;
+  color: #898989;
+}
+
+.user-icon {
+  background-color: rgba(36, 105, 92, 0.1);
+  border: none;
+  color: #24695c;
+  padding: 7px 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.email,
+.password {
+  width: 100%;
+  display: flex;
+}
+
+.agreement {
+  padding-left: 10px;
+}
+
+.group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.form-group {
+  padding: 0 0 20px;
+}
+
+.form-group > input {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #e6edef;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.agreement > span {
+  color: #24695c;
+}
+
+.agreement:not(span) {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  padding: 0 0 0 10px;
+}
+
+.create-btn {
+  margin: 0 0 20px;
+}
+
+.create-btn > button {
+  padding: 6px 28px;
+  background-color: #24695c;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.show-hide {
+  transform: translate(340px,-26px);
+  z-index: 5;
+  position: absolute;
+  color: #24695c;
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}

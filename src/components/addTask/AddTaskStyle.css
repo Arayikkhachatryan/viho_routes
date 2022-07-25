@@ -1,0 +1,49 @@
+.add-task {
+    padding-top: 30px;
+  }
+  
+  .visible,
+  .opened-add-newtask {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.375rem 1.75rem;
+    background-color: #24695c;
+    color: #fff;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: 500;
+    padding: 6px 28px;
+  }
+  
+  .hidden {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.375rem 1.75rem;
+    background-color: #d22d3d;
+    color: #fff;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: 500;
+    padding: 6px 28px;
+  }
+  
+  #newtask {
+    background-color: #111727;
+    border: 1px solid rgba(36, 105, 92, 0.2);
+    color: hsla(0, 0%, 100%, 0.7);
+    margin: 0 0 24px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 90px;
+    margin-bottom: 24px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
